@@ -21,7 +21,7 @@
 
             if(mysqli_num_rows($dados_recuperados) > 0){
                 
-                while( ($resultado = mysqli_fetch_($dados_recuperados)) != null) {
+                while( ($resultado = mysqli_fetch_array($dados_recuperados)) != null) {
                     
                     echo $resultado[0] . " -" . $resultado[1] . " - " . $resultado[2] . "<br>";
                     echo '<a href="menu.php">Voltar</a>';
