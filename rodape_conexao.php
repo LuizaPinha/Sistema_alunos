@@ -2,7 +2,8 @@
 	// Executa o comando SQL
 	$query = mysqli_query($con, $SQL);
 	if($query){
-		echo $texto;
+		echo "Operação concluida";
+		echo"</br>";
 		echo "<a href='menu.php'>Voltar</a>";
 	} else {
 		echo mysqli_error($con);
